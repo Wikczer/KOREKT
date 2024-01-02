@@ -67,3 +67,8 @@ header{
     color:#364652;
     text-align: center;
 }
+.mid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
