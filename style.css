@@ -5,7 +5,7 @@ body{
 }
 
 
-#main {
+#onas {
     background: 
     url(assets/bg.png);
     background-position: center;
@@ -13,8 +13,8 @@ body{
     background-attachment: scroll;
     background-size: cover;
    }
-#header{
-    background-color: #212529;
+header{
+    background-color: #d6eeff;
 }
  /*-------------main---------------*/
  .side{
@@ -32,6 +32,8 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 55px;
 }
 #together p{
@@ -46,12 +48,22 @@ body{
     justify-content:left;
     margin: 0 0 0 45px;
 }
-#main{
+#onas{
     flex-wrap: wrap;
     height: 600px;
     width: 100%;
 }
 .title{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color:#364652;
+    margin-top: 60px;
+}
+#logo{
+    color: #364652;
+    text-transform:uppercase;}
+
+#onas h2{
+    font-size: 1.5em;
+    color:#364652;
+    text-align: center;
 }
