@@ -65,10 +65,38 @@ header{
 #onas h2{
     font-size: 1.5em;
     color:#364652;
-    text-align: center;
 }
-.mid{
+div.mid{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 }
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2.left.mid{
+    margin: 0 0 0 65px;
+}
+
+
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+p{
+    padding: 100px 90px 0 0px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    h2.left.mid{
+        margin: 0 0 0 0px;
+    
+    }
+    p{
+        padding: 50px 0 0 0;
+        font-size: smaller;
+    }
+  }
