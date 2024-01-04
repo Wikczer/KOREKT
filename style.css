@@ -298,3 +298,19 @@ p{
   button{
         cursor: pointer;
   }
+  .kolumna{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100px;
+  }
+  #oferta h1{
+    font-size: 3em;
+    color: #d6eeff;
+  }
