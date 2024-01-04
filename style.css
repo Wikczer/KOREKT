@@ -70,6 +70,12 @@ div.mid{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+}
+div.caps.left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .boxes{
     display: flex;
@@ -97,10 +103,17 @@ p{
     }
     p{
         padding: 20px 0 0 0;
-        font-size: smaller;
+        font-size:x-small
     }
     .guzik{
         padding: 5px;
+    }
+    div.box.guzik{
+        align-content: start;
+        padding-left: 10px;
+    }
+    button.btn{
+        width: 350px;
     }
   }
   #oferta p{
