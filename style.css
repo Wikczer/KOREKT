@@ -2,6 +2,8 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -96,7 +98,7 @@ p{
     padding: 100px 90px 0 0px;
     text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     h2.left.mid{
         margin: 0 0 0 0px;
     
@@ -264,7 +266,7 @@ p{
   }
   
   /* Styles for mobile and tablets */
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 1000px) {
     .slider-wrapper .slide-button {
       display: none !important;
     }
@@ -328,7 +330,7 @@ p{
     height: 600px;
   }
 /*form*/
-#form{
+#formularz{
   background-color: #D6EEFF;
 }
 .bok{
@@ -371,7 +373,7 @@ h4{
   font-size: 2em;
   color: #364652;
 }
-#form{
+#formularz{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
