@@ -314,3 +314,69 @@ p{
     font-size: 3em;
     color: #d6eeff;
   }
+
+  .pudelka{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  
+  .rec{
+    background-color: #d6eeff;
+    width:1100px;
+    height: 600px;
+  }
+/*form*/
+#form{
+  background-color: #D6EEFF;
+}
+.bok{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+  
+input{ 
+    
+  padding-left: 0;
+}
+textarea{
+padding-left: 0;}}
+
+input{
+  height: 2em;
+  border: none;
+  border-bottom: 2px solid gray
+}
+textarea{
+  border: none;
+border-bottom: 2px solid gray;
+font-size: 1em;}
+
+::placeholder{
+
+  font-size: 1.5em;
+  align-items: baseline;
+}
+h4{
+  border-radius: 0;
+  font-size: 2em;
+  color: #364652;
+}
+#form{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.przycisk{
+  width: 200px;
+background-color:#364652;
+color: white;
+border-radius: 12px;
+font-size: 2em;
+padding: 5px;
+justify-content: center;}
