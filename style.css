@@ -346,14 +346,20 @@ textarea{
 padding-left: 0;}}
 
 input{
-  height: 2em;
+  height: 2.5em;
   border: none;
-  border-bottom: 2px solid gray
+  border-bottom: 2px solid gray;
+  border-radius: 12px;
+  text-indent: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 textarea{
   border: none;
 border-bottom: 2px solid gray;
-font-size: 1em;}
+font-size: 1em;
+font-family: 'Montserrat', sans-serif;
+text-indent: 10px;
+border-radius: 12px;}
 
 ::placeholder{
 
@@ -372,11 +378,4 @@ justify-content: center;
 flex-direction: column;
 align-items: center;
 }
-.przycisk{
-  width: 200px;
-background-color:#364652;
-color: white;
-border-radius: 12px;
-font-size: 2em;
-padding: 5px;
-justify-content: center;}
+
