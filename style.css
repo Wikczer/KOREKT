@@ -404,6 +404,7 @@ align-items: center;
   font-weight: 700;
   justify-content: center;
   margin-bottom: 30px;
+  align-content: center;
 }
 #kontakt{
   background-color: #364652;
@@ -420,7 +421,7 @@ align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 100px;
-  margin-right: 150px;
+  margin-right: 100px;
   margin-top: 15px;
 }
 .dane{
@@ -430,4 +431,7 @@ align-items: center;
 }
 .dane.short{
   width: 250px;
+  margin-right: 50px;
 }
+
+/*na telefon*/
