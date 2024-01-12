@@ -1,3 +1,4 @@
+
 body{
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +10,14 @@ a{ text-decoration: none; color: inherit; }
 p.bold{
   color: #364652;
 }
+#kontakt {
+  background: 
+  url(assets/k1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+ }
 
 #onas {
     background: 
@@ -20,6 +29,7 @@ p.bold{
    }
 header{
     background-color: #d6eeff;
+    margin-top: 0;
 }
  /*-------------main---------------*/
  .side{
@@ -102,26 +112,7 @@ p{
     padding: 100px 90px 0 0px;
     text-align: center;
 }
-@media only screen and (max-width: 1000px) {
-    h2.left.mid{
-        margin: 0 0 0 0px;
-    
-    }
-    p{
-        padding: 20px 0 0 0;
-        font-size:x-small
-    }
-    .guzik{
-        padding: 5px;
-    }
-    div.box.guzik{
-        align-content: start;
-        padding-left: 10px;
-    }
-    button.btn{
-        width: 350px;
-    }
-  }
+
   #oferta p{
     color: #364652;
   }
@@ -148,7 +139,6 @@ p{
     align-content: center;
   }
   #oferta * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
@@ -267,29 +257,7 @@ p{
     right: 0;
     top: -10px;
     bottom: -10px;
-  }
-  
-  /* Styles for mobile and tablets */
-  @media only screen and (max-width: 1000px) {
-    .slider-wrapper .slide-button {
-      display: none !important;
-    }
-  
-    .slider-wrapper .image-list {
-      gap: 10px;
-      margin-bottom: 15px;
-      scroll-snap-type: x mandatory;
-    }
-  
-    .slider-wrapper .image-list .image-item {
-      width: 280px;
-      height: 380px;
-    }
-  
-    .slider-scrollbar .scrollbar-thumb {
-      width: 20%;
-    }
-  }
+  }  
   #prev-slide img{
     width: 40px;
     height: auto;
@@ -326,8 +294,6 @@ p{
     flex-wrap: wrap;
     flex-direction: row;
   }
-
-  
   .rec{
     background-color: #d6eeff;
     width:1100px;
@@ -429,9 +395,78 @@ align-items: center;
   font-size: larger;
   text-align: center;
 }
-.dane.short{
-  width: 250px;
-  margin-right: 50px;
-}
-
 /*na telefon*/
+@media only screen and (max-width: 1000px) {
+  #onas {
+    background: 
+    url(assets/bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+   }
+  div.kolumna{
+    width:100%
+  }
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;}
+  h2.left.mid{
+      margin: 0 0 0 0px;
+  }
+  p{
+      padding: 20px 0 0 0;
+      font-size:x-small
+  }
+  .guzik{
+      padding: 5px;
+      margin: 0;
+    }
+  div.box.guzik{
+      align-content: start;
+      padding-left: 10px;
+  }
+  button.btn{
+      width: 350px;
+  }
+  #oferta .container{
+    max-width: fit-content;
+  }
+  #formularz input{
+    width: 100%;
+  }
+  .klik{
+    width: 100%;
+  }
+  #together p{
+    font-size: 0.5em
+  }
+  div.container{
+    margin-left: 10px;
+  }
+ .title{
+  margin-top: 30px;
+  margin-bottom: 20px;}
+  p.szer{
+    padding-top: 10px;
+  }
+  h1.middle{
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 0px;
+  }
+  #kontakt{
+    flex-direction: column;
+  }
+ #together{
+  align-items: center;
+ }
+}
