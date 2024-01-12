@@ -449,7 +449,8 @@ align-items: center;
 
   }
   #together p{
-    font-size: 0.5em
+    font-size: 0.7em;
+    padding: 0 10px 0 10px;
   }
   div.container{
     margin-left: 10px;
