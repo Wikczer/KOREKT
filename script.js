@@ -1,3 +1,20 @@
+document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.getElementById('menu__toggle');
+    var menuItems = document.querySelectorAll('.menu__item');
+  
+    menuToggle.addEventListener('change', function () {
+      menuItems.forEach(function (menuItem) {
+        // If menu is checked (open), show menu items; otherwise, hide them
+        menuItem.style.display = menuToggle.checked ? 'block' : 'none';
+      });
+    });
+  });
+
+
+
+
+
+
 const initSlider = () => {
     const imageList = document.querySelector(".slider-wrapper .image-list");
     const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");

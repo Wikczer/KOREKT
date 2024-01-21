@@ -4,12 +4,14 @@ body {
   font-weight: 700;
   margin: 0;
   padding: 0;
+  background-color: #D6EEFF;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
+
 
 p.bold {
   color: #364652;
@@ -44,8 +46,8 @@ header {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 0 15px;
-  font-size: 15.2px;
+  padding: 0 30px;
+  font-size: 16px;
   height: 100%;
 }
 
@@ -72,7 +74,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  margin: 0 0 0 45px;
+  margin: 0 0 0 85px;
 }
 
 #onas {
@@ -80,6 +82,7 @@ header {
   height: 600px;
   width: 100%;
 }
+
 
 .title {
   font-size: 3.2rem;
@@ -96,14 +99,19 @@ header {
 #onas h2 {
   color: #364652;
 }
-
+.element{
+  margin-top: 50px;
+}
 div.mid {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
+  justify-content: center;
+width: 725px;
 }
-
+.caps.bold{
+  margin-left: 30px;
+}
 div.caps.left {
   display: flex;
   flex-wrap: wrap;
@@ -113,25 +121,32 @@ div.caps.left {
 .boxes {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
-h2.left.mid {
-  margin: 0 0 0 65px;
+h2.mid.lil{
+  margin-top: 0;
 }
 
-
+#onas.klik{
+  margin-top: 70px;
+}
 
 .box {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 60%;
+  width: 725px;
 }
-
-p {
-  padding: 100px 90px 0 0px;
+p.szer{
+  width: 725px;
   text-align: center;
+  color: #364652;
+  font-size: 16px;
 }
-
+button{
+  color: #D6EEFF;
+}
 #oferta p {
   color: #364652;
 }
@@ -143,18 +158,22 @@ p {
   margin: 30px;
 }
 
-button {
-  color: #364652;
+
+p.btn {
+  display: flex;
+  color: #071108;
   background-color: #D6EEFF;
   font-size: x-large;
   border-style: none;
   border-radius: 40px;
   padding: 10px;
-  width: 500px;
-  height: 70px;
+  width: 450px;
+  height: 50px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   justify-content: center;
+  text-align: center;
+
 }
 
 div.box.guzik {
@@ -296,7 +315,7 @@ div.box.guzik {
   background-color: #364652;
 }
 
-button {
+.btn {
   cursor: pointer;
 }
 
@@ -344,11 +363,11 @@ button {
 
   input {
 
-    padding-left: 0;
+    padding: 5px 15px;
   }
 
   textarea {
-    padding-left: 0;
+    padding: 5px 15px;
   }
 }
 
@@ -490,7 +509,7 @@ h4 {
     padding-left: 10px;
   }
 
-  button.btn {
+  p.btn {
     width: 350px;
   }
 
@@ -520,23 +539,129 @@ h4 {
   .title {
     margin-top: 30px;
     margin-bottom: 20px;
+    font-size: 2.5em;
   }
-
+  div.mid{
+    justify-content: left;
+  }
+  h2.mid.lil{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    justify-content:left }
+.boxes.left{
+  margin-left: 30px;
+}
   p.szer {
-    padding-top: 10px;
+  width: 380px;
+  font-size: 0.85em;
+  padding: 0;
   }
+.box{
+  flex-direction: row;
+}
+.klik.mid{
+  margin-top: 50px;
+  margin-left: 50px;
+}
 
   h1.middle {
     text-align: center;
-    margin-bottom: 70px;
-    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
-
-  #kontakt {
+#kontakt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  .pojemnik {
+    justify-content: center;
     flex-direction: column;
+  }
+  .dane{
+
+width: auto;
   }
 
   #together {
     align-items: center;
   }
+}
+
+@media only screen and (max-width: 850px) {
+h1.title{
+  width: 500px;
+}}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
 }
