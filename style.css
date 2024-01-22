@@ -461,6 +461,24 @@ h4 {
 }
 
 /*na telefon*/
+@media only screen and (max-width: 850px) {
+  #onas div {
+    width: auto;
+  }
+h1.title{
+  width: 100%;
+}
+.caps{
+  width: 100%;
+}
+.mid{
+  width: 100%;
+}
+.boxes.left{
+  width: 100%;
+}
+}
+
 @media only screen and (max-width: 1000px) {
   #onas {
     background:
@@ -589,17 +607,7 @@ width: auto;
   }
 }
 
-@media only screen and (max-width: 850px) {
-h1.title{
-  width: 500px;
-}
-.caps{
-  width: 500px;
-}
-.mid{
-  width: 500px;
-}
-}
+
 
 
 #menu__toggle {
